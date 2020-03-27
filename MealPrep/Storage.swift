@@ -18,6 +18,12 @@ class Storage{
     private init(){
         
         objects = [Recipe]()
+        objects.append(Recipe(recipeName: "Chicken Pot Pie", recipe: "Pie crust, margerine, onion, flour, salt, pepper, chicken broth, milk, chicken, vegetables"))
+        objects.append(Recipe(recipeName: "Chicken Stir Fry", recipe: "chicken, broccoli, honey, salted seseme oil, soy sauce, chicken broth"))
+        
+        
+
+        
 
     }
    
