@@ -35,10 +35,12 @@ class MasterViewController: UITableViewController {
     @objc
     func insertNewObject(_ sender: Any) {
         
-        let newItem = Recipe(recipeName: "Recipe Name", recipe: "String")
-        objects.insert(newItem, at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
+//        let newItem = Recipe(recipeName: "Recipe Name", recipe: "String")
+//        objects.insert(newItem, at: 0)
+//        let indexPath = IndexPath(row: 0, section: 0)
+//        tableView.insertRows(at: [indexPath], with: .automatic)
+        performSegue(withIdentifier: "ShowAddRecipe", sender: self)
+    
     }
 
     // MARK: - Segues

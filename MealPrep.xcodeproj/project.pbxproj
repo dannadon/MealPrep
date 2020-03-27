@@ -19,6 +19,7 @@
 		5C85954E242E538A00E3DA8E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85954D242E538A00E3DA8E /* Recipe.swift */; };
 		5C859550242E540C00E3DA8E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85954F242E540C00E3DA8E /* Storage.swift */; };
 		5C859552242E57C500E3DA8E /* RecipeUITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C859551242E57C500E3DA8E /* RecipeUITableCell.swift */; };
+		5C859554242E67EB00E3DA8E /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C859553242E67EB00E3DA8E /* AddRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5C85954D242E538A00E3DA8E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		5C85954F242E540C00E3DA8E /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		5C859551242E57C500E3DA8E /* RecipeUITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeUITableCell.swift; sourceTree = "<group>"; };
+		5C859553242E67EB00E3DA8E /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				5C85954F242E540C00E3DA8E /* Storage.swift */,
 				5C816932242D8E3500F5D707 /* DetailViewController.swift */,
 				5C816934242D8E3500F5D707 /* Main.storyboard */,
+				5C859553242E67EB00E3DA8E /* AddRecipeViewController.swift */,
 				5C859551242E57C500E3DA8E /* RecipeUITableCell.swift */,
 				5C85954D242E538A00E3DA8E /* Recipe.swift */,
 				5C816937242D8E3600F5D707 /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C859554242E67EB00E3DA8E /* AddRecipeViewController.swift in Sources */,
 				5C81692D242D8E3500F5D707 /* AppDelegate.swift in Sources */,
 				5C81692F242D8E3500F5D707 /* SceneDelegate.swift in Sources */,
 				5C816931242D8E3500F5D707 /* MasterViewController.swift in Sources */,
