@@ -5,6 +5,7 @@
 //  Created by Danna Don on 3/26/20.
 //  Copyright © 2020 ddon. All rights reserved.
 //
+//
 
 import UIKit
 
@@ -97,4 +98,13 @@ class MasterViewController: UITableViewController {
 
 
 }
+
+/*
+
+https://www.youtube.com/watch?v=BJ-iqL1P1ic
+https://www.youtube.com/watch?v=7CaP-9WfkYU&t=716s (all parts)
+
+these were some links that really helped me get started in the project
+
+*/
 
