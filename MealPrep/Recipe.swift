@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Recipe{
+class Recipe: NSObject, NSCoding{
     
     var recipeName: String
     var recipe: String
@@ -19,5 +19,21 @@ class Recipe{
         self.recipe = recipe
         
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        recipeName = aDecoder.decodeObject(forKey: "recipeName") as? String ?? ""
+        recipe = aDecoder.decodeObject(forKey: "recipe") as? String ?? ""
+        
+    }
+    
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(recipeName, forKey: "recipeName")
+        aCoder.encode(recipe, forKey: "recipe")
+        
+        
+    }
+    
+    
     
 }

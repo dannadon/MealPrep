@@ -17,9 +17,14 @@ class AddRecipeViewController: UIViewController{
     @IBOutlet weak var AddButtonLabel: UIButton!
     
     
+    
     @objc
     
     @IBAction func AddRecipe() -> Void{
+        
+        
+        
+        
         
         let newRecipeName = RecipeNameInputLabel.text!
         let newRecipeDescp = RecipeInputLabel.text!
@@ -27,6 +32,7 @@ class AddRecipeViewController: UIViewController{
         let newRecipe = Recipe(recipeName: newRecipeName, recipe: newRecipeDescp)
         
         Storage.shared.objects.append(newRecipe)
+        Storage.shared.save()
         performSegue(withIdentifier: "backToTable", sender: self)
         
     }

@@ -12,10 +12,14 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = Storage.shared.objects
+    var objects = Storage.shared.load()
+    
 
+    
 
     override func viewDidLoad() {
+    
+       objects = Storage.shared.load()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
@@ -35,6 +39,9 @@ class MasterViewController: UITableViewController {
 
     @objc
     func insertNewObject(_ sender: Any) {
+        
+        
+        
         
 //        let newItem = Recipe(recipeName: "Recipe Name", recipe: "String")
 //        objects.insert(newItem, at: 0)
