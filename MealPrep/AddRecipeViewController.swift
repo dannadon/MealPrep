@@ -22,8 +22,7 @@ class AddRecipeViewController: UIViewController{
     
     @IBAction func AddRecipe() -> Void{
         
-        
-        
+    
         
         
         let newRecipeName = RecipeNameInputLabel.text!

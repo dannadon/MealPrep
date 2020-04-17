@@ -14,6 +14,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var RecipeNameLabel: UILabel!
     @IBOutlet weak var RecipeLabel: UILabel!
     
+    @IBOutlet weak var deleteRecipe: UIToolbar!
+    
+    
+    
     
 
     func configureView() {

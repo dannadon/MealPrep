@@ -19,7 +19,7 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
     
-       objects = Storage.shared.load()
+       //objects = Storage.shared.load()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         navigationItem.leftBarButtonItem = editButtonItem
@@ -97,7 +97,10 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             objects.remove(at: indexPath.row)
+            Storage.shared.objects.remove(at: indexPath.row)
+            Storage.shared.save()
             tableView.deleteRows(at: [indexPath], with: .fade)
+
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }

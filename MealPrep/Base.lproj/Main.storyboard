@@ -67,6 +67,7 @@
                     <connections>
                         <outlet property="RecipeLabel" destination="mpq-Tx-iAd" id="p8u-Y7-0P5"/>
                         <outlet property="RecipeNameLabel" destination="ONq-JW-bTB" id="8vb-pS-UeK"/>
+                        <outlet property="deleteRecipe" destination="Mzy-1w-Tvn" id="nzt-1h-Ike"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>

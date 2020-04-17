@@ -13,13 +13,13 @@ class Storage{
     
     static let shared: Storage = Storage()
     
-    var objects: [Recipe]
+    var objects: [Recipe] = [Recipe]()
     
     
     
     private init(){
         
-        objects = [Recipe]()
+        self.objects = self.load()
         
 
 //        objects.append(Recipe(recipeName: "Chicken Pot Pie", recipe: "Pie Crust, Margerine, Onion, fFlour, Salt, Pepper, Chicken Broth, Milk, Chicken, Vegetables"))
