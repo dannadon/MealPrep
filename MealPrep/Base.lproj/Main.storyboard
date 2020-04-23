@@ -31,6 +31,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-MW-xzV">
+                                <rect key="frame" x="0.0" y="84" width="414" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipe Name " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONq-JW-bTB">
                                 <rect key="frame" x="33" y="114" width="361" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,12 +62,23 @@
                                 </items>
                                 <color key="barTintColor" red="0.68112451419999998" green="0.4934251952" blue="0.64475776569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VNu-yG-t5w">
+                                <rect key="frame" x="11" y="752" width="66" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.85048979920000001" green="0.54917146620000001" blue="0.82917387409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" image="pencil" catalog="system" id="FYC-Ke-LYs">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.68112451419999998" green="0.4934251952" blue="0.64475776569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.68112451419999998" green="0.4934251952" blue="0.64475776569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
+                        <viewLayoutGuide key="safeArea" id="xR9-pD-a8c"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM" colorLabel="IBBuiltInLabel-Gray"/>
+                    <navigationItem key="navigationItem" title="Recipe" id="9Gh-5g-ckI" colorLabel="IBBuiltInLabel-Gray"/>
                     <connections>
                         <outlet property="RecipeLabel" destination="mpq-Tx-iAd" id="p8u-Y7-0P5"/>
                         <outlet property="RecipeNameLabel" destination="ONq-JW-bTB" id="8vb-pS-UeK"/>
@@ -123,10 +138,10 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1P-4M-IVW">
-                                            <rect key="frame" x="388" y="13" width="14" height="89"/>
+                                            <rect key="frame" x="301" y="13" width="101" height="89"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.68112451419999998" green="0.4934251952" blue="0.64475776569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -147,7 +162,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Chef's Choice" id="Zdf-7t-Un8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,7 +228,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.68112451419999998" green="0.4934251952" blue="0.64475776569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="D9T-mg-Nas"/>
+                        <viewLayoutGuide key="safeArea" id="sDP-ne-ljQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="RW5-jH-pdL"/>
                     <connections>
@@ -244,9 +259,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="trash" catalog="system" width="60" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="rRR-V2-7Ic"/>
         <segue reference="6S0-TO-JiA"/>
         <segue reference="rwr-8M-BYT"/>
     </inferredMetricsTieBreakers>
