@@ -23,7 +23,8 @@ class AddRecipeViewController: UIViewController{
     @IBAction func AddRecipe() -> Void{
         
     
-        
+        //addinig another recipe occurs here
+        //view controller
         
         let newRecipeName = RecipeNameInputLabel.text!
         let newRecipeDescp = RecipeInputLabel.text!
@@ -32,6 +33,8 @@ class AddRecipeViewController: UIViewController{
         
         Storage.shared.objects.append(newRecipe)
         Storage.shared.save()
+        
+        //once page is complete and the user hits add then the new recipe is added
         performSegue(withIdentifier: "backToTable", sender: self)
         
     }

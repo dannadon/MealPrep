@@ -12,7 +12,7 @@ class Storage{
     
     
     static let shared: Storage = Storage()
-    
+    //array of recipes
     var objects: [Recipe] = [Recipe]()
     
     
@@ -33,6 +33,7 @@ class Storage{
 //         objects.append(Recipe(recipeName: "Korean Beef Bowls", recipe: "Flank Stead, Rice, Garlic Salt, Seseme Oil, Broccoli, Korean BBQ Sauce Mix"))
         
     }
+    // this is how the recipe is archived
     
     
         func save(){
@@ -45,7 +46,7 @@ class Storage{
             
 
         }
-        
+        //loaded everytime the app is reopened with the changed details
         func load() -> [Recipe]{
             
             let defaults = UserDefaults.standard

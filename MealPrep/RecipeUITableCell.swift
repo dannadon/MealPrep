@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//the cell for master page. Each cell will show recipe name and the beginning of the actual recipe
 class RecipeUITableCell: UITableViewCell {
     
     var recipeName: String = ""

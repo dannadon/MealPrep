@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+// Recipe class for the app to use to classify the recipe name and the recipe itself
 class Recipe: NSObject, NSCoding{
     
     var recipeName: String
