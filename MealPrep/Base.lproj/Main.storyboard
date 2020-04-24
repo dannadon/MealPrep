@@ -263,7 +263,6 @@
         <image name="trash" catalog="system" width="60" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rRR-V2-7Ic"/>
         <segue reference="6S0-TO-JiA"/>
         <segue reference="rwr-8M-BYT"/>
     </inferredMetricsTieBreakers>
